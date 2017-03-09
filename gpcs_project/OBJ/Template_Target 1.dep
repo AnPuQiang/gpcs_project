@@ -1,0 +1,928 @@
+Dependencies for Project 'Template', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x58BFC864)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\HARDWARE\LED\led.h)(0x532ACAF6)
+I (..\HARDWARE\KEY\key.h)(0x532ADF6A)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+I (..\FATFS\exfuns\exfuns.h)(0x53228403)
+I (..\FATFS\src\ff.h)(0x52D56672)
+I (..\FATFS\src\integer.h)(0x52D56672)
+I (..\FATFS\src\ffconf.h)(0x532282B2)
+I (..\MALLOC\malloc.h)(0x58BE76A7)
+I (..\SYSTEM\usart2\usart2.h)(0x58BFB967)
+I (..\HARDWARE\TIMER\timer.h)(0x58B6BBF7)
+I (..\HARDWARE\sim808\sim808.h)(0x58B6BB63)
+I (..\HARDWARE\SD\mmc_sd.h)(0x5321BCB9)
+F (.\stm32f10x_it.c)(0x5509582A)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
+I (stm32f10x_it.h)(0x4D99A426)
+I (stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (system_stm32f10x.h)(0x4D783CAA)
+I (stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (.\system_stm32f10x.c)(0x4D99A426)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
+I (stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (system_stm32f10x.h)(0x4D783CAA)
+I (stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\LED\led.c)(0x55502813)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (..\HARDWARE\LED\led.h)(0x532ACAF6)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\KEY\key.c)(0x533011E0)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
+I (..\HARDWARE\KEY\key.h)(0x532ADF6A)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+F (..\HARDWARE\SD\MMC_SD.C)(0x532D3675)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\mmc_sd.o --omf_browse ..\obj\mmc_sd.crf --depend ..\obj\mmc_sd.d)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\SD\mmc_sd.h)(0x5321BCB9)
+I (..\HARDWARE\SPI\spi.h)(0x532D22B9)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+F (..\HARDWARE\SPI\spi.c)(0x532D3571)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\spi.o --omf_browse ..\obj\spi.crf --depend ..\obj\spi.d)
+I (..\HARDWARE\SPI\spi.h)(0x532D22B9)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\FLASH\flash.c)(0x532D4932)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\flash.o --omf_browse ..\obj\flash.crf --depend ..\obj\flash.d)
+I (..\HARDWARE\FLASH\flash.h)(0x532C1F57)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\SPI\spi.h)(0x532D22B9)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+F (..\HARDWARE\sim808\sim808.c)(0x58BE14A8)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\sim808.o --omf_browse ..\obj\sim808.crf --depend ..\obj\sim808.d)
+I (..\HARDWARE\sim808\sim808.h)(0x58B6BB63)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\SYSTEM\usart2\usart2.h)(0x58BFB967)
+F (..\HARDWARE\TIMER\timer.c)(0x58B6BBCE)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\timer.o --omf_browse ..\obj\timer.crf --depend ..\obj\timer.d)
+I (..\HARDWARE\TIMER\timer.h)(0x58B6BBF7)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\delay\delay.c)(0x555AC883)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+F (..\SYSTEM\sys\sys.c)(0x550BE77F)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\usart\usart.c)(0x5567E9ED)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+F (..\SYSTEM\usart2\usart2.c)(0x58BD08BD)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart2.o --omf_browse ..\obj\usart2.crf --depend ..\obj\usart2.d)
+I (..\SYSTEM\delay\delay.h)(0x555AC87B)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart2\usart2.h)(0x58BFB967)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+F (..\CORE\startup_stm32f10x_hd.s)(0x550A7B7E)(--cpu Cortex-M3 -g --apcs=interwork -I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F10X_HD SETA 1"--list .\startup_stm32f10x_hd.lst --xref -o ..\obj\startup_stm32f10x_hd.o --depend ..\obj\startup_stm32f10x_hd.d)
+F (..\FWLIB\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_spi.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_spi.o --omf_browse ..\obj\stm32f10x_spi.crf --depend ..\obj\stm32f10x_spi.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_tim.o --omf_browse ..\obj\stm32f10x_tim.crf --depend ..\obj\stm32f10x_tim.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FWLIB\STM32F10x_FWLib\src\stm32f10x_dma.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_dma.o --omf_browse ..\obj\stm32f10x_dma.crf --depend ..\obj\stm32f10x_dma.d)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\UCOSIII\UCOS_BSP\bsp.c)(0x544B7624)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\bsp.o --omf_browse ..\obj\bsp.crf --depend ..\obj\bsp.d)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\UCOSIII\uC-CPU\cpu_core.c)(0x523BF7D2)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\cpu_core.o --omf_browse ..\obj\cpu_core.crf --depend ..\obj\cpu_core.d)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+F (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu_c.c)(0x5011F816)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\cpu_c.o --omf_browse ..\obj\cpu_c.crf --depend ..\obj\cpu_c.d)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+F (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu_a.asm)(0x5011F816)(--cpu Cortex-M3 -g --apcs=interwork -I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F10X_HD SETA 1"--list .\cpu_a.lst --xref -o ..\obj\cpu_a.o --depend ..\obj\cpu_a.d)
+F (..\UCOSIII\uC-LIB\lib_ascii.c)(0x52736048)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lib_ascii.o --omf_browse ..\obj\lib_ascii.crf --depend ..\obj\lib_ascii.d)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+F (..\UCOSIII\uC-LIB\lib_math.c)(0x52736048)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lib_math.o --omf_browse ..\obj\lib_math.crf --depend ..\obj\lib_math.d)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+F (..\UCOSIII\uC-LIB\lib_mem.c)(0x52736048)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lib_mem.o --omf_browse ..\obj\lib_mem.crf --depend ..\obj\lib_mem.d)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+F (..\UCOSIII\uC-LIB\lib_str.c)(0x52736048)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\lib_str.o --omf_browse ..\obj\lib_str.crf --depend ..\obj\lib_str.d)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+F (..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm)(0x4FFE6F74)(--cpu Cortex-M3 -g --apcs=interwork -I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F10X_HD SETA 1"--list .\lib_mem_a.lst --xref -o ..\obj\lib_mem_a.o --depend ..\obj\lib_mem_a.d)
+F (..\UCOSIII\uCOS-III\Source\os_cfg_app.c)(0x545B1AF8)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_cfg_app.o --omf_browse ..\obj\os_cfg_app.crf --depend ..\obj\os_cfg_app.d)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg_app.h)(0x545AF591)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_core.c)(0x546EA52B)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_core.o --omf_browse ..\obj\os_core.crf --depend ..\obj\os_core.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_dbg.c)(0x4F47150C)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_dbg.o --omf_browse ..\obj\os_dbg.crf --depend ..\obj\os_dbg.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_flag.c)(0x4F47150C)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_flag.o --omf_browse ..\obj\os_flag.crf --depend ..\obj\os_flag.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_int.c)(0x545B223C)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_int.o --omf_browse ..\obj\os_int.crf --depend ..\obj\os_int.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_mem.c)(0x4F47150E)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_mem.o --omf_browse ..\obj\os_mem.crf --depend ..\obj\os_mem.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_msg.c)(0x4F47150A)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_msg.o --omf_browse ..\obj\os_msg.crf --depend ..\obj\os_msg.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_mutex.c)(0x4F47150C)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_mutex.o --omf_browse ..\obj\os_mutex.crf --depend ..\obj\os_mutex.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_pend_multi.c)(0x4F47150A)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_pend_multi.o --omf_browse ..\obj\os_pend_multi.crf --depend ..\obj\os_pend_multi.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_prio.c)(0x546F4B66)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_prio.o --omf_browse ..\obj\os_prio.crf --depend ..\obj\os_prio.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_q.c)(0x4F47150E)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_q.o --omf_browse ..\obj\os_q.crf --depend ..\obj\os_q.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_sem.c)(0x4F47150A)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_sem.o --omf_browse ..\obj\os_sem.crf --depend ..\obj\os_sem.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_stat.c)(0x5458E5C9)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_stat.o --omf_browse ..\obj\os_stat.crf --depend ..\obj\os_stat.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_task.c)(0x5459D69B)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_task.o --omf_browse ..\obj\os_task.crf --depend ..\obj\os_task.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_tick.c)(0x5458DEAF)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_tick.o --omf_browse ..\obj\os_tick.crf --depend ..\obj\os_tick.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_time.c)(0x5458DB7E)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_time.o --omf_browse ..\obj\os_time.crf --depend ..\obj\os_time.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_tmr.c)(0x4F471510)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_tmr.o --omf_browse ..\obj\os_tmr.crf --depend ..\obj\os_tmr.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Source\os_var.c)(0x4F47150A)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_var.o --omf_browse ..\obj\os_var.crf --depend ..\obj\os_var.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+F (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)()
+F (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s)(0x550A85B7)(--cpu Cortex-M3 -g --apcs=interwork -I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "STM32F10X_HD SETA 1"--list .\os_cpu_a.lst --xref -o ..\obj\os_cpu_a.o --depend ..\obj\os_cpu_a.d)
+F (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_c.c)(0x550A7D69)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_cpu_c.o --omf_browse ..\obj\os_cpu_c.crf --depend ..\obj\os_cpu_c.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)()
+F (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)()
+F (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)()
+F (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)()
+F (..\UCOSIII\uCOS_CONFIG\os_app_hooks.c)(0x524125C8)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\os_app_hooks.o --omf_browse ..\obj\os_app_hooks.crf --depend ..\obj\os_app_hooks.d)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uCOS_CONFIG\os_app_hooks.h)(0x54589261)
+F (..\UCOSIII\uCOS_CONFIG\os_app_hooks.h)(0x54589261)()
+F (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)()
+F (..\UCOSIII\uCOS_CONFIG\os_cfg_app.h)(0x545AF591)()
+F (..\FATFS\src\diskio.c)(0x58BEA0E0)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\diskio.o --omf_browse ..\obj\diskio.crf --depend ..\obj\diskio.d)
+I (..\FATFS\src\diskio.h)(0x58B8DE53)
+I (..\FATFS\src\integer.h)(0x52D56672)
+I (..\HARDWARE\SD\mmc_sd.h)(0x5321BCB9)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\HARDWARE\FLASH\flash.h)(0x532C1F57)
+I (..\MALLOC\malloc.h)(0x58BE76A7)
+I (..\UCOSIII\uCOS_CONFIG\includes.h)(0x5469F03F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
+I (..\UCOSIII\uCOS-III\Source\os.h)(0x5459CCA8)
+I (..\UCOSIII\uCOS_CONFIG\os_cfg.h)(0x54C64217)
+I (..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView\cpu.h)(0x5011F816)
+I (..\UCOSIII\uC-CPU\cpu_def.h)(0x523BF7D2)
+I (..\UCOSIII\uCOS_CONFIG\cpu_cfg.h)(0x544BA771)
+I (..\UCOSIII\uC-CPU\cpu_core.h)(0x523BF7D2)
+I (..\UCOSIII\uC-LIB\lib_def.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_mem.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\lib_cfg.h)(0x5458922F)
+I (..\UCOSIII\uC-LIB\lib_str.h)(0x52736048)
+I (..\UCOSIII\uC-LIB\lib_ascii.h)(0x52736048)
+I (..\UCOSIII\uCOS-III\Source\os_type.h)(0x4F47150C)
+I (..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h)(0x550A7D23)
+I (..\UCOSIII\uC-LIB\lib_math.h)(0x52736048)
+I (..\UCOSIII\uCOS_CONFIG\app_cfg.h)(0x54EECEDD)
+I (..\UCOSIII\UCOS_BSP\bsp.h)(0x55097DA7)
+F (..\FATFS\src\ff.c)(0x52D56672)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\ff.o --omf_browse ..\obj\ff.crf --depend ..\obj\ff.d)
+I (..\FATFS\src\ff.h)(0x52D56672)
+I (..\FATFS\src\integer.h)(0x52D56672)
+I (..\FATFS\src\ffconf.h)(0x532282B2)
+I (..\FATFS\src\diskio.h)(0x58B8DE53)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+F (..\FATFS\src\option\cc936.c)(0x57CC2470)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\cc936.o --omf_browse ..\obj\cc936.crf --depend ..\obj\cc936.d)
+I (..\FATFS\src\option\../ff.h)(0x52D56672)
+I (..\FATFS\src\option\../integer.h)(0x52D56672)
+I (..\FATFS\src\option\../ffconf.h)(0x532282B2)
+F (..\FATFS\exfuns\exfuns.c)(0x53228403)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\exfuns.o --omf_browse ..\obj\exfuns.crf --depend ..\obj\exfuns.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\FATFS\exfuns\exfuns.h)(0x53228403)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FATFS\src\ff.h)(0x52D56672)
+I (..\FATFS\src\integer.h)(0x52D56672)
+I (..\FATFS\src\ffconf.h)(0x532282B2)
+I (..\FATFS\exfuns\fattester.h)(0x53228AC0)
+I (..\MALLOC\malloc.h)(0x58BE76A7)
+I (..\SYSTEM\usart\usart.h)(0x50513AC4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\SYSTEM\sys\sys.h)(0x555AE364)
+F (..\MALLOC\malloc.c)(0x58B92E28)(-c --cpu Cortex-M3 -g -O2 --apcs=interwork -I..\USER -I..\CORE -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\STM32F10x_FWLib\inc -I..\FWLIB\STM32F10x_FWLib\inc -I..\HARDWARE\LED -I..\UCOSIII\uC-CPU -I..\UCOSIII\uC-LIB -I..\HARDWARE\KEY -I..\UCOSIII\uCOS-III -I..\UCOSIII\UCOS_BSP -I..\UCOSIII\uCOS_CONFIG -I..\UCOSIII\uCOS-III\Source -I..\UCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\FATFS\src -I..\FATFS\src\option -I..\FATFS\exfuns -I..\HARDWARE\FLASH -I..\HARDWARE\SD -I..\HARDWARE\SPI -I..\MALLOC -I..\SYSTEM\usart2 -I..\HARDWARE\sim808 -I..\HARDWARE\TIMER-I "D:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE"-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\obj\malloc.o --omf_browse ..\obj\malloc.crf --depend ..\obj\malloc.d)
+I (..\MALLOC\malloc.h)(0x58BE76A7)
+I (..\USER\stm32f10x.h)(0x4D783CB4)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\USER\system_stm32f10x.h)(0x4D783CAA)
+I (..\USER\stm32f10x_conf.h)(0x58B9527D)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\FWLIB\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
