@@ -367,11 +367,11 @@ ARM Macro Assembler    Page 6
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=..\obj\os_cpu_a.d -o..\obj\os_cpu_a.o -I"D:\gpcs\keil工程\例10-2 U
-COSIII使用信号量访问共享资源区\USER\RTE" -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_D
-FP\2.1.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_V
-ERSION SETA 515" --predefine="STM32F10X_HD SETA 1" --list=.\os_cpu_a.lst ..\UCO
-SIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.s
+ork --depend=..\obj\os_cpu_a.d -o..\obj\os_cpu_a.o -ID:\git\git_repository\gpcs
+_project\USER\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+ -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 515" --pred
+efine="STM32F10X_HD SETA 1" --list=.\os_cpu_a.lst ..\UCOSIII\uCOS-III\Ports\ARM
+-Cortex-M3\Generic\RealView\os_cpu_a.s
 
 
 

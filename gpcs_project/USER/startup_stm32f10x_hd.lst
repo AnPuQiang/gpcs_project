@@ -565,11 +565,11 @@ ARM Macro Assembler    Page 9
               00000200 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=..\obj\startup_stm32f10x_hd.d -o..\obj\startup_stm32f10x_hd.o -I"D
-:\gpcs\keil工程\例10-2 UCOSIII使用信号量访问共享资源区\USER\RTE" -IC:\Keil_v5\A
-RM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include 
---predefine="__UVISION_VERSION SETA 515" --predefine="STM32F10X_HD SETA 1" --li
-st=.\startup_stm32f10x_hd.lst ..\CORE\startup_stm32f10x_hd.s
+ork --depend=..\obj\startup_stm32f10x_hd.d -o..\obj\startup_stm32f10x_hd.o -ID:
+\git\git_repository\gpcs_project\USER\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_
+DFP\2.1.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_
+VERSION SETA 515" --predefine="STM32F10X_HD SETA 1" --list=.\startup_stm32f10x_
+hd.lst ..\CORE\startup_stm32f10x_hd.s
 
 
 

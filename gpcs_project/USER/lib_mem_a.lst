@@ -444,11 +444,11 @@ ARM Macro Assembler    Page 7
   310 00000220         
   311 00000220                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=..\obj\lib_mem_a.d -o..\obj\lib_mem_a.o -I"D:\gpcs\keil工程\例10-2
- UCOSIII使用信号量访问共享资源区\USER\RTE" -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx
-_DFP\2.1.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION
-_VERSION SETA 515" --predefine="STM32F10X_HD SETA 1" --list=.\lib_mem_a.lst ..\
-UCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView\lib_mem_a.asm
+ork --depend=..\obj\lib_mem_a.d -o..\obj\lib_mem_a.o -ID:\git\git_repository\gp
+cs_project\USER\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Inclu
+de -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 515" --pr
+edefine="STM32F10X_HD SETA 1" --list=.\lib_mem_a.lst ..\UCOSIII\uC-LIB\Ports\AR
+M-Cortex-M3\RealView\lib_mem_a.asm
 
 
 
