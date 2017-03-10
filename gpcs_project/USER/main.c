@@ -213,7 +213,8 @@ void task1_task(void *p_arg)
 	u8 gps_number=0;
 	u8 buffer_length;
 	u32 file_size;
-	u8 file_name[12];
+	u8 file_name[13]={0};	//字符串数组要初始化！！
+	char *char_filename;
 	unsigned int name=0;
 	char buf[100];
 	u8 gps_able;
@@ -242,9 +243,11 @@ void task1_task(void *p_arg)
 				file_name[temp]=buffer[temp];
 			}
 			file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
-//				sprintf(buf,"%8s.txt",buffer);
-			printf("%s",(char*)file_name);
-				res_sd=f_open(file, "123.txt", FA_OPEN_ALWAYS|FA_WRITE);
+			printf("file_name:%s\r\n",(char*)file_name);
+			//将获取到的年月日信息作为文件名，创建txt文件
+			char_filename=(char*)file_name;
+			printf("char_filename:%s\r\n",char_filename);
+			res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
 				printf("打开文件返回代码：%d\r\n",res_sd);
 				printf("file_size: %d\r\n",(int)(*file).fsize);
 				f_lseek(file,(*file).fsize);
