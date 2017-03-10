@@ -78,6 +78,7 @@ u8 buffer[100];
 u8 gps_analysis(void);
 u8 NMEA_Comma_Pos(u8 *buf,u8 cx);
 u32 NMEA_Pow(u8 m,u8 n);
+void data_storage(void);
 
 //主函数
 int main(void)
@@ -209,13 +210,6 @@ void task1_task(void *p_arg)
 {
 	OS_ERR err;
 	u8 task1_str[]="!";
-	u8 temp;
-	u8 gps_number=0;
-	u8 buffer_length;
-	u32 file_size;
-	u8 file_name[13]={0};	//字符串数组要初始化！！
-	char *char_filename;
-	unsigned int name=0;
 	char buf[100];
 	u8 gps_able;
 	OSSemPend(&MY_SEM,0,OS_OPT_PEND_BLOCKING,0,&err); 	//请求信号量
@@ -236,28 +230,7 @@ void task1_task(void *p_arg)
 		gps_able=gps_analysis();
 		if(gps_able)	//获取gps数据正确
 		{
-			SD_Initialize();
-			printf("buffer:%s\r\n",buffer);
-			for(temp=0;temp<8;temp++)
-			{
-				file_name[temp]=buffer[temp];
-			}
-			file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
-			printf("file_name:%s\r\n",(char*)file_name);
-			//将获取到的年月日信息作为文件名，创建txt文件
-			char_filename=(char*)file_name;
-			printf("char_filename:%s\r\n",char_filename);
-			res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
-				printf("打开文件返回代码：%d\r\n",res_sd);
-				printf("file_size: %d\r\n",(int)(*file).fsize);
-				f_lseek(file,(*file).fsize);
-				buffer_length = strlen((char*)buffer);
-			printf("%d",buffer_length);
-				res_sd=f_write(file,(char*)buffer,buffer_length,&br);   //写入buffer	
-				f_printf(file,"\r\n");
-			  printf("写入文件返回代码：%d\r\n",res_sd);	
-				res_sd=f_close(file);
-				printf("关闭文件返回代码：%d\r\n",res_sd);
+			data_storage();//gps数据存储进SD卡中
 		}
 //		printf("%s\r\n",share_resource);	//串口输出共享资源区数据	
 		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//发送信号量
@@ -321,4 +294,34 @@ u32 NMEA_Pow(u8 m,u8 n)
 	u32 result=1;	 
 	while(n--)result*=m;    
 	return result;
+}
+void data_storage(void)
+{
+	u8 temp;
+	u8 buffer_length;
+	u8 file_name[13]={0};	//字符串数组要初始化！！
+	char *char_filename;
+	SD_Initialize();
+			printf("buffer:%s\r\n",buffer);
+			for(temp=0;temp<8;temp++)
+			{
+				file_name[temp]=buffer[temp];
+			}
+			file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
+			printf("file_name:%s\r\n",(char*)file_name);
+			//将获取到的年月日信息作为文件名，创建txt文件
+			char_filename=(char*)file_name;
+			printf("char_filename:%s\r\n",char_filename);
+			res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
+				printf("打开文件返回代码：%d\r\n",res_sd);
+				printf("file_size: %d\r\n",(int)(*file).fsize);
+				f_lseek(file,(*file).fsize);
+				buffer_length = strlen((char*)buffer);
+			printf("%d",buffer_length);
+				res_sd=f_write(file,(char*)buffer,buffer_length,&br);   //写入buffer	
+				f_printf(file,"\r\n");
+			  printf("写入文件返回代码：%d\r\n",res_sd);	
+				res_sd=f_close(file);
+				printf("关闭文件返回代码：%d\r\n",res_sd);
+
 }
