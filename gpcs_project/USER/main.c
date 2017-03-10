@@ -72,13 +72,14 @@ u16 Heartbeat=0;
 vu8 Heart_beat;//发送心跳帧标志位
 
 vu8 Timer0_start;	//定时器0延时启动计数器
-u8 buffer[100];
+u8 buffer[200];
 
 
 u8 gps_analysis(void);
 u8 NMEA_Comma_Pos(u8 *buf,u8 cx);
 u32 NMEA_Pow(u8 m,u8 n);
 void data_storage(void);
+void connecting_server(void);
 
 //主函数
 int main(void)
@@ -211,11 +212,15 @@ void task1_task(void *p_arg)
 	OS_ERR err;
 	u8 task1_str[]="!";
 	char buf[100];
+	char *buffa;
 	u8 gps_able;
+	u8 res_gprs;
 	OSSemPend(&MY_SEM,0,OS_OPT_PEND_BLOCKING,0,&err); 	//请求信号量
 	memcpy(share_resource,task1_str,sizeof(task1_str)); //向共享资源区拷贝数据
 //	USART2_Init(115200);
-	sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);	//打开GPS电源
+	connecting_server();
+	res_gprs=sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);	//打开GPS电源
+	printf("gps power:%d",res_gprs);
 	while(1)
 	{
 		USART2_Init(115200);
@@ -223,14 +228,29 @@ void task1_task(void *p_arg)
 		{
 			printf("收到GPS\r\n");
 		}
-		printf("okokok\r\n");
-		delay_ms(2000);
-		printf("111USART2_RX_BUF:%s\r\n",USART2_RX_BUF);
+//		Send_OK();
+		delay_ms(500);
 //获得解析之后的数据
 		gps_able=gps_analysis();
-		if(gps_able)	//获取gps数据正确
-		{
+		if(gps_able)	//若获取gps数据正确
+		{							//1：数据存储2：数据发送并标记
 			data_storage();//gps数据存储进SD卡中
+			USART2_Init(115200);
+			buffa=(char*)buffer;
+			buffa = strcat((char*)buffa,"\r\n\32\0");
+			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",800);
+			printf("send_ok:%d\r\n",res_gprs);
+			delay_ms(500);
+			memset(buffer,0,sizeof(buffer));	//清空buffer
+			if(Heart_beat)
+			{
+				Send_OK();
+				sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);
+				Heart_beat=0;
+			}
+			
 		}
 //		printf("%s\r\n",share_resource);	//串口输出共享资源区数据	
 		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//发送信号量
@@ -302,26 +322,46 @@ void data_storage(void)
 	u8 file_name[13]={0};	//字符串数组要初始化！！
 	char *char_filename;
 	SD_Initialize();
-			printf("buffer:%s\r\n",buffer);
-			for(temp=0;temp<8;temp++)
-			{
-				file_name[temp]=buffer[temp];
-			}
-			file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
-			printf("file_name:%s\r\n",(char*)file_name);
-			//将获取到的年月日信息作为文件名，创建txt文件
-			char_filename=(char*)file_name;
-			printf("char_filename:%s\r\n",char_filename);
-			res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
-				printf("打开文件返回代码：%d\r\n",res_sd);
-				printf("file_size: %d\r\n",(int)(*file).fsize);
-				f_lseek(file,(*file).fsize);
-				buffer_length = strlen((char*)buffer);
-			printf("%d",buffer_length);
-				res_sd=f_write(file,(char*)buffer,buffer_length,&br);   //写入buffer	
-				f_printf(file,"\r\n");
-			  printf("写入文件返回代码：%d\r\n",res_sd);	
-				res_sd=f_close(file);
-				printf("关闭文件返回代码：%d\r\n",res_sd);
-
+//	printf("buffer:%s\r\n",buffer);
+	for(temp=0;temp<8;temp++)
+	{
+		file_name[temp]=buffer[temp];
+	}
+	file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
+	
+	printf("file_name:%s\r\n",(char*)file_name);
+	//将获取到的年月日信息作为文件名，创建txt文件
+	char_filename=(char*)file_name;
+	printf("char_filename:%s\r\n",char_filename);
+	//打开该文件，将buffer写入文件中
+	res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
+	printf("打开文件返回代码：%d\r\n",res_sd);
+	printf("file_size: %d\r\n",(int)(*file).fsize);
+	f_lseek(file,(*file).fsize);
+	buffer_length = strlen((char*)buffer);
+	printf("buffer_length:%d\r\n",buffer_length);
+	res_sd=f_write(file,(char*)buffer,buffer_length,&br);
+	f_printf(file,"\r\n");
+	printf("写入文件返回代码：%d\r\n",res_sd);	
+	res_sd=f_close(file);
+	printf("关闭文件返回代码：%d\r\n",res_sd);
 }
+
+void connecting_server(void)
+ {
+	 printf("GPRS模块在注册网络\r\n");
+	 //Wait_CREG();
+	 printf("注册成功\r\n");
+	 UART2_SENDString("AT+CIPCLOSE=1");	//关闭连接
+   delay_ms(100);
+	 sim808_send_cmd("AT+CIPSHUT","SHUT OK",200);		//关闭移动场景
+	 sim808_send_cmd("AT+CGCLASS=\"B\"","OK",200);//设置GPRS移动台类别为B,支持包交换和数据交换 
+	 sim808_send_cmd("AT+CGDCONT=1,\"IP\",\"CMNET\"","OK",200);//设置PDP上下文,互联网接协议,接入点等信息
+	 sim808_send_cmd("AT+CGATT=1","OK",200);//附着GPRS业务
+	 sim808_send_cmd("AT+CIPCSGP=1,\"CMNET\"","OK",200);//设置为GPRS连接模式
+	 sim808_send_cmd("AT+CIPHEAD=1","OK",200);//设置接收数据显示IP头(方便判断数据来源,仅在单路连接有效)
+	 sim808_send_cmd((u8*)IP_command,"OK",500);
+	 delay_ms(100);
+	 CLR_Buf2();
+	 printf("连接成功\r\n");
+ }
