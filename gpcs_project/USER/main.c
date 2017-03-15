@@ -120,9 +120,13 @@ int main(void)
 		
 	}
 	USART2_Init(115200);
-	if(sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000))//打开GPS电源!=0
-	{printf("失败%s\r\n",USART2_RX_BUF);}
-	else{printf("成功%s\r\n",USART2_RX_BUF);}
+	while(sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000))//打开GPS电源!=0
+	{
+		printf("失败%s\r\n",USART2_RX_BUF);
+		delay_ms(500);
+	
+	}
+	//else{printf("成功%s\r\n",USART2_RX_BUF);}
 	
 			
 	
