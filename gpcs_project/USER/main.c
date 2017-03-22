@@ -11,6 +11,9 @@
 #include "sim808.h"
 #include "mmc_sd.h"		
 #include "ff.h"
+#include "mpu6050.h"  
+#include "inv_mpu.h"
+#include "inv_mpu_dmp_motion_driver.h" 
 /************************************************
 ************************************************/
 
@@ -92,10 +95,16 @@ int main(void)
 	delay_init();  //时钟初始化
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//中断分组配置
 	uart_init(115200);   //串口初始化
-
 	Timer2_Init_Config();
 	LED_Init();         //LED初始化	
 	KEY_Init();			//按键初始化
+	MPU_Init();
+	while(mpu_dmp_init())
+	{
+		printf("MPU6050 ERROR\r\n");
+		delay_ms(500);
+	}
+	
 	//SPI_Flash_Init();		//W25Qxx初始化												  
   mem_init();				//内存池初始化
 	exfuns_init();
@@ -215,13 +224,16 @@ void task1_task(void *p_arg)
 {
 	OS_ERR err;
 	u8 task1_str[]="!";
+	int temp;
 	char buf[100];
-	char *buffa;
+	char *buffa;                // Device header
+	float pitch,roll,yaw; 		//欧拉角
+	short aacx,aacy,aacz;		//加速度传感器原始数据
+	short gyrox,gyroy,gyroz;	//陀螺仪原始数据
 	u8 gps_able;
 	u8 res_gprs;
 	OSSemPend(&MY_SEM,0,OS_OPT_PEND_BLOCKING,0,&err); 	//请求信号量
 	memcpy(share_resource,task1_str,sizeof(task1_str)); //向共享资源区拷贝数据
-//	USART2_Init(115200);
 	connecting_server();
 	res_gprs=sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);	//打开GPS电源
 	printf("gps power:%d",res_gprs);
@@ -232,6 +244,7 @@ void task1_task(void *p_arg)
 		{
 			printf("收到GPS\r\n");
 		}
+
 //		Send_OK();
 		delay_ms(500);
 //获得解析之后的数据
@@ -244,8 +257,9 @@ void task1_task(void *p_arg)
 			buffa = strcat((char*)buffa,"\r\n\32\0");
 			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
 			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
-			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",800);
+			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",1000);
 			printf("send_ok:%d\r\n",res_gprs);
+			Send_OK();
 			delay_ms(500);
 			memset(buffer,0,sizeof(buffer));	//清空buffer
 			if(Heart_beat)
@@ -256,9 +270,21 @@ void task1_task(void *p_arg)
 			}
 			
 		}
+		
+		temp=mpu_dmp_get_data(&pitch,&roll,&yaw);
+		printf("mpu_dmp_get_data=%d\r\n",temp);
+		printf("pitch=%f\r\n",pitch);
+		printf("roll=%f\r\n",roll);
+		MPU_Get_Accelerometer(&aacx,&aacy,&aacz);	//得到加速度传感器数据
+		printf("aacx=%d,aacy=%d,aacz=%d\r\n",aacx,aacy,aacz);
+		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);	//得到陀螺仪数据
+		printf("gyrox=%d,gyroy=%d,gyroz=%d\r\n",gyrox,gyroy,gyroz);
 //		printf("%s\r\n",share_resource);	//串口输出共享资源区数据	
 		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//发送信号量
 		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //延时1s
+
+		
+	
 	}
 }
 

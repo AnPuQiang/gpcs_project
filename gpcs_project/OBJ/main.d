@@ -51,3 +51,7 @@
 ..\obj\main.o: ..\HARDWARE\TIMER\timer.h
 ..\obj\main.o: ..\HARDWARE\sim808\sim808.h
 ..\obj\main.o: ..\HARDWARE\SD\mmc_sd.h
+..\obj\main.o: ..\HARDWARE\MPU6050\mpu6050.h
+..\obj\main.o: ..\HARDWARE\MPU6050\mpuiic.h
+..\obj\main.o: ..\HARDWARE\MPU6050\eMPL\inv_mpu.h
+..\obj\main.o: ..\HARDWARE\MPU6050\eMPL\inv_mpu_dmp_motion_driver.h
