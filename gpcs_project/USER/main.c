@@ -14,6 +14,7 @@
 #include "mpu6050.h"  
 #include "inv_mpu.h"
 #include "inv_mpu_dmp_motion_driver.h" 
+#include <math.h>
 /************************************************
 ************************************************/
 
@@ -76,6 +77,12 @@ vu8 Heart_beat;//发送心跳帧标志位
 
 vu8 Timer0_start;	//定时器0延时启动计数器
 u8 buffer[200];
+char mpu[60];
+char mpuInit[60];
+float pitch,roll,yaw; 		//欧拉角
+short aacx,aacy,aacz;		//加速度传感器原始数据
+float aacxx,aacyy;
+short gyrox,gyroy,gyroz;	//陀螺仪原始数据
 
 
 u8 gps_analysis(void);
@@ -225,11 +232,10 @@ void task1_task(void *p_arg)
 	OS_ERR err;
 	u8 task1_str[]="!";
 	int temp;
-	char buf[100];
 	char *buffa;                // Device header
-	float pitch,roll,yaw; 		//欧拉角
-	short aacx,aacy,aacz;		//加速度传感器原始数据
-	short gyrox,gyroy,gyroz;	//陀螺仪原始数据
+	char *mpua;
+	char *mpuaInit;	//未校正的数据
+	
 	u8 gps_able;
 	u8 res_gprs;
 	OSSemPend(&MY_SEM,0,OS_OPT_PEND_BLOCKING,0,&err); 	//请求信号量
@@ -254,12 +260,24 @@ void task1_task(void *p_arg)
 			data_storage();//gps数据存储进SD卡中
 			USART2_Init(115200);
 			buffa=(char*)buffer;
+			mpua = (char*)mpu;
+			mpuaInit = (char*)mpuInit;
+			mpua = strcat((char*)mpua,"\r\n\32\0");
 			buffa = strcat((char*)buffa,"\r\n\32\0");
+			mpuaInit = strcat((char*)mpuaInit,"\r\n\32\0");
 			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
-			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+		  printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
 			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",1000);
 			printf("send_ok:%d\r\n",res_gprs);
-			Send_OK();
+			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+			res_gprs=sim808_send_cmd((u8*)mpua,"SEND OK",1000);
+			printf("send_ok:%d\r\n",res_gprs);
+			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+			res_gprs=sim808_send_cmd((u8*)mpuaInit,"SEND OK",1000);
+			printf("send_ok:%d\r\n",res_gprs);
+//			Send_OK();
 			delay_ms(500);
 			memset(buffer,0,sizeof(buffer));	//清空buffer
 			if(Heart_beat)
@@ -270,15 +288,21 @@ void task1_task(void *p_arg)
 			}
 			
 		}
-		
+		/*得到角度值，单位度*/
 		temp=mpu_dmp_get_data(&pitch,&roll,&yaw);
 		printf("mpu_dmp_get_data=%d\r\n",temp);
 		printf("pitch=%f\r\n",pitch);
 		printf("roll=%f\r\n",roll);
+//		printf("yaw=%f\r\n",yaw);
+		/*加速度传感器灵敏度16384LSB/g
+		陀螺仪灵敏度16.4LSB/(度每秒)*/
 		MPU_Get_Accelerometer(&aacx,&aacy,&aacz);	//得到加速度传感器数据
-		printf("aacx=%d,aacy=%d,aacz=%d\r\n",aacx,aacy,aacz);
+		printf("aacx=%f,aacy=%f,aacz=%f\r\n",(float)(aacx*9.8/16384),(float)(aacy*9.8/16384),(float)(aacz*9.8/16384));
+		aacxx = (float)(aacx*9.8/16384)-9.8*sin(pitch)*cos(roll);
+		aacyy = (float)(aacy*9.8/16384)+9.8*sin(roll)*cos(pitch);
+		printf("aacxx = %f, aacyy = %f\r\n", aacxx, aacyy);
 		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);	//得到陀螺仪数据
-		printf("gyrox=%d,gyroy=%d,gyroz=%d\r\n",gyrox,gyroy,gyroz);
+		printf("gyrox=%f,gyroy=%f,gyroz=%f\r\n",(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
 //		printf("%s\r\n",share_resource);	//串口输出共享资源区数据	
 		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//发送信号量
 		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //延时1s
@@ -311,18 +335,98 @@ u8 gps_analysis(void)	//返回1证明成功
 	 u8 pos_begin;
 	 u8 pos_end;
 	 int i;
+	 int time;
+	 int date;
+	 int month;
+	 int year;
+	 int leapyearFlag = 0;
 	 pos_begin = NMEA_Comma_Pos(USART2_RX_BUF,2);
    pos_end = NMEA_Comma_Pos(USART2_RX_BUF,5);
 	 if(USART2_RX_BUF[pos_begin] == '1' || USART2_RX_BUF[pos_begin] == '2')	//如果读取的年份的第一位数字是2，证明时间正确
-	 {
+	{
 	 for(i = pos_begin;i<pos_end;i++)
 	 {
 		 buffer[i-pos_begin] = USART2_RX_BUF[i];
 	 }
+	 /*
+	 **UTC转北京时间
+	 */
+	 time = (buffer[9]-'0') + 10*(buffer[8]-'0');
+	 date = (buffer[7]-'0') + 10*(buffer[6]-'0');
+	 month= (buffer[5]-'0') + 10*(buffer[4]-'0');
+	 year = (buffer[3]-'0') + 10*(buffer[2]-'0') + 100*(buffer[1]-'0') + 1000*(buffer[0]-'0');
+	 if( (year%4 == 0 && year%100 != 0)|| year%400 == 0){	
+			leapyearFlag = 1;	//判断是否闰年
+	 }
+	 if(( time + 8 ) >= 24){	//日期需加一
+		 if(leapyearFlag){
+			switch( month ){
+				case 2: if(date == 29){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+				case 4: case 6: case 9: case 11:
+								if(date == 30){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+				case 12: if(date == 31){	
+										date = 1; 
+										month++;
+										year++;}
+								else{date++;}
+					break;
+				default: if(date == 31){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+			}
+		 }
+		 else{
+			switch( month ){
+				case 2: if(date == 28){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+				case 4: case 6: case 9: case 11:
+								if(date == 30){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+				case 12: if(date == 31){	
+										date = 1; 
+										month++;
+										year++;}
+								else{date++;}
+					break;
+				default: if(date == 31){	
+										date = 1; 
+										month++;}
+								else{date++;}
+					break;
+			}
+		 
+		 } 
+	 }
+	 else{time = time + 8;}
+	 buffer[3] = year%10 + '0'; year=year/10;
+	 buffer[2] = year%10 + '0'; year=year/10;
+	 buffer[1] = year%10 + '0'; year=year/10;
+	 buffer[0] = year%10 + '0'; year=year/10;
+	 
+	 buffer[5] = month%10 + '0'; buffer[4]=month/10 + '0';
+	 
+	 buffer[7] = date%10 + '0'; buffer[6]=date/10 + '0';
+	 buffer[9] = time%10 + '0'; buffer[8]=time/10 + '0';
 	 printf("USART2_RX_BUF:%s\r\n",USART2_RX_BUF);
    CLR_Buf2();
 	 return 1;
- }
+	}
 	 else{return 0;}
  }
  u8 NMEA_Comma_Pos(u8 *buf,u8 cx)
@@ -351,6 +455,7 @@ void data_storage(void)
 	u8 buffer_length;
 	u8 file_name[13]={0};	//字符串数组要初始化！！
 	char *char_filename;
+	
 	SD_Initialize();
 //	printf("buffer:%s\r\n",buffer);
 	for(temp=0;temp<8;temp++)
@@ -362,7 +467,7 @@ void data_storage(void)
 	printf("file_name:%s\r\n",(char*)file_name);
 	//将获取到的年月日信息作为文件名，创建txt文件
 	char_filename=(char*)file_name;
-	printf("char_filename:%s\r\n",char_filename);
+	//printf("char_filename:%s\r\n",char_filename);
 	//打开该文件，将buffer写入文件中
 	res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
 	printf("打开文件返回代码：%d\r\n",res_sd);
@@ -371,6 +476,10 @@ void data_storage(void)
 	buffer_length = strlen((char*)buffer);
 	printf("buffer_length:%d\r\n",buffer_length);
 	res_sd=f_write(file,(char*)buffer,buffer_length,&br);
+	sprintf(mpu,"%f,%f,%f,%f,%f,%f",aacxx,aacyy,(float)(aacz*9.8/16384),(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
+	sprintf(mpuInit,"%f,%f,%f,%f,%f,%f",(float)(aacx*9.8/16384),(float)(aacy*9.8/16384),(float)(aacz*9.8/16384),(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
+	res_sd=f_write(file,(char*)mpuInit,strlen(mpuInit),&br);
+	res_sd=f_write(file,(char*)mpu,strlen(mpu),&br);
 	f_printf(file,"\r\n");
 	printf("写入文件返回代码：%d\r\n",res_sd);	
 	res_sd=f_close(file);
