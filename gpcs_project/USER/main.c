@@ -58,6 +58,14 @@ OS_TCB Task2_TaskTCB;
 __align(8) static CPU_STK TASK2_TASK_STK[TASK2_STK_SIZE];
 void task2_task(void *p_arg);
 
+//MPU6050校准数据
+#define ACCX0 1.6341
+#define ACCY0 0.2329
+#define ACCZ0 8.9055
+#define GYROX0 -2.7779
+#define GYROY0 -0.1290
+#define GYROZ0 -0.9798
+
 u8 share_resource[1];   //共享资源区
 
 OS_SEM	MY_SEM;		//定义一个信号量，用于访问共享资源
@@ -82,6 +90,7 @@ char mpuInit[60];
 float pitch,roll,yaw; 		//欧拉角
 short aacx,aacy,aacz;		//加速度传感器原始数据
 float aacxx,aacyy;
+float g;
 short gyrox,gyroy,gyroz;	//陀螺仪原始数据
 
 
@@ -258,34 +267,34 @@ void task1_task(void *p_arg)
 		if(gps_able)	//若获取gps数据正确
 		{							//1：数据存储2：数据发送并标记
 			data_storage();//gps数据存储进SD卡中
-			USART2_Init(115200);
-			buffa=(char*)buffer;
-			mpua = (char*)mpu;
-			mpuaInit = (char*)mpuInit;
-			mpua = strcat((char*)mpua,"\r\n\32\0");
-			buffa = strcat((char*)buffa,"\r\n\32\0");
-			mpuaInit = strcat((char*)mpuaInit,"\r\n\32\0");
-			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
-		  printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
-			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",1000);
-			printf("send_ok:%d\r\n",res_gprs);
-			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
-			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
-			res_gprs=sim808_send_cmd((u8*)mpua,"SEND OK",1000);
-			printf("send_ok:%d\r\n",res_gprs);
-			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
-			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
-			res_gprs=sim808_send_cmd((u8*)mpuaInit,"SEND OK",1000);
-			printf("send_ok:%d\r\n",res_gprs);
-//			Send_OK();
-			delay_ms(500);
-			memset(buffer,0,sizeof(buffer));	//清空buffer
-			if(Heart_beat)
-			{
-				Send_OK();
-				sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);
-				Heart_beat=0;
-			}
+//			USART2_Init(115200);
+//			buffa=(char*)buffer;
+//			mpua = (char*)mpu;
+//			mpuaInit = (char*)mpuInit;
+//			mpua = strcat((char*)mpua,"\r\n\32\0");
+//			buffa = strcat((char*)buffa,"\r\n\32\0");
+//			mpuaInit = strcat((char*)mpuaInit,"\r\n\32\0");
+//			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+//		  printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+//			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",1000);
+//			printf("send_ok:%d\r\n",res_gprs);
+//			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+//			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+//			res_gprs=sim808_send_cmd((u8*)mpua,"SEND OK",1000);
+//			printf("send_ok:%d\r\n",res_gprs);
+//			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
+//			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
+//			res_gprs=sim808_send_cmd((u8*)mpuaInit,"SEND OK",1000);
+//			printf("send_ok:%d\r\n",res_gprs);
+////			Send_OK();
+//			delay_ms(500);
+//			memset(buffer,0,sizeof(buffer));	//清空buffer
+//			if(Heart_beat)
+//			{
+//				Send_OK();
+//				sim808_send_cmd("AT+CGNSPWR=1\r\n","AT",2000);
+//				Heart_beat=0;
+//			}
 			
 		}
 		/*得到角度值，单位度*/
@@ -293,16 +302,18 @@ void task1_task(void *p_arg)
 		printf("mpu_dmp_get_data=%d\r\n",temp);
 		printf("pitch=%f\r\n",pitch);
 		printf("roll=%f\r\n",roll);
-//		printf("yaw=%f\r\n",yaw);
+		printf("yaw=%f\r\n",yaw);
 		/*加速度传感器灵敏度16384LSB/g
 		陀螺仪灵敏度16.4LSB/(度每秒)*/
 		MPU_Get_Accelerometer(&aacx,&aacy,&aacz);	//得到加速度传感器数据
-		printf("aacx=%f,aacy=%f,aacz=%f\r\n",(float)(aacx*9.8/16384),(float)(aacy*9.8/16384),(float)(aacz*9.8/16384));
-		aacxx = (float)(aacx*9.8/16384)-9.8*sin(pitch)*cos(roll);
-		aacyy = (float)(aacy*9.8/16384)+9.8*sin(roll)*cos(pitch);
+		printf("aacx=%f,aacy=%f,aacz=%f\r\n",(float)(aacx*9.8/16384)-ACCX0,(float)(aacy*9.8/16384)-ACCY0,(float)(aacz*9.8/16384));
+		g = (float)(aacz*9.8/16384);
+//		g = 9.8;
+		aacxx = (float)(aacx*g/16384)-ACCX0-g*sin(pitch*3.1415/180)*cos(roll*3.1415/180);
+		aacyy = (float)(aacy*g/16384)-ACCY0+g*sin(roll*3.1415/180)*cos(pitch*3.1415/180);
 		printf("aacxx = %f, aacyy = %f\r\n", aacxx, aacyy);
 		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);	//得到陀螺仪数据
-		printf("gyrox=%f,gyroy=%f,gyroz=%f\r\n",(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
+		printf("gyrox=%f,gyroy=%f,gyroz=%f\r\n",(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
 //		printf("%s\r\n",share_resource);	//串口输出共享资源区数据	
 		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//发送信号量
 		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //延时1s
@@ -476,9 +487,9 @@ void data_storage(void)
 	buffer_length = strlen((char*)buffer);
 	printf("buffer_length:%d\r\n",buffer_length);
 	res_sd=f_write(file,(char*)buffer,buffer_length,&br);
-	sprintf(mpu,"%f,%f,%f,%f,%f,%f",aacxx,aacyy,(float)(aacz*9.8/16384),(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
-	sprintf(mpuInit,"%f,%f,%f,%f,%f,%f",(float)(aacx*9.8/16384),(float)(aacy*9.8/16384),(float)(aacz*9.8/16384),(float)(gyrox/16.4),(float)(gyroy/16.4),(float)(gyroz/16.4));
+	sprintf(mpuInit,"%f,%f,%f,%f,%f,%f,",(float)(aacx*9.8/16384)-ACCX0,(float)(aacy*9.8/16384)-ACCY0,(float)(aacz*9.8/16384)-ACCZ0,(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
 	res_sd=f_write(file,(char*)mpuInit,strlen(mpuInit),&br);
+	sprintf(mpu,"%f,%f,%f,%f,%f,%f",aacxx,aacyy,(float)(aacz*9.8/16384)-ACCZ0,(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
 	res_sd=f_write(file,(char*)mpu,strlen(mpu),&br);
 	f_printf(file,"\r\n");
 	printf("写入文件返回代码：%d\r\n",res_sd);	
