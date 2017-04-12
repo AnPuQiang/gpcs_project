@@ -28,19 +28,15 @@ Project File Date:  03/23/2017
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling main.c...
-main.c(244): warning:  #177-D: variable "buffa" was declared but never referenced
-        char *buffa;                // Device header
-main.c(245): warning:  #177-D: variable "mpua" was declared but never referenced
-        char *mpua;
-main.c(246): warning:  #177-D: variable "mpuaInit" was declared but never referenced
+main.c(260): warning:  #177-D: variable "task1_str" was declared but never referenced
+        u8 task1_str[]="!";
+main.c(264): warning:  #550-D: variable "mpuaInit" was set but never used
         char *mpuaInit; //Î´Ð£?ýµ??ý¾?
-main.c(329): warning:  #177-D: variable "err" was declared but never referenced
-        OS_ERR err;
-main.c: 4 warnings, 0 errors
+main.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=76114 RO-data=180390 RW-data=756 ZI-data=39444  
+Program Size: Code=76114 RO-data=180390 RW-data=764 ZI-data=39468  
 FromELF: creating hex file...
-"..\OBJ\MALLOC.axf" - 0 Error(s), 4 Warning(s).
+"..\OBJ\MALLOC.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\git\git_repository\gpcs_project\USER\RTE

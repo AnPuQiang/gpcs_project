@@ -1,0 +1,861 @@
+连接成功
+gps power:0收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800105235944.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800105.txt
+char_filename:19800105.txt
+打开文件返回代码：0
+file_size: 69
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:1
+send_ok:1
+pitch=0.000000
+roll=0.000000
+mpu_dmp_get_data=30
+aacx=5232,aacy=1910,aacz=17314
+gyrox=118,gyroy=-6,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800105235957.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800105.txt
+char_filename:19800105.txt
+打开文件返回代码：0
+file_size: 92
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.000000
+roll=0.000000
+mpu_dmp_get_data=0
+aacx=5186,aacy=1982,aacz=17260
+gyrox=118,gyroy=-4,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800105235959.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800105.txt
+char_filename:19800105.txt
+打开文件返回代码：0
+file_size: 115
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.001563
+roll=-0.091158
+mpu_dmp_get_data=0
+aacx=5256,aacy=1966,aacz=17316
+gyrox=116,gyroy=-8,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000001.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 299
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.001563
+roll=-0.091158
+mpu_dmp_get_data=0
+aacx=5284,aacy=2004,aacz=17268
+gyrox=117,gyroy=-6,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000003.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 322
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-0.008116
+roll=0.038888
+mpu_dmp_get_data=0
+aacx=5268,aacy=1964,aacz=17352
+gyrox=117,gyroy=-6,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000005.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 345
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.004740
+roll=-0.010830
+mpu_dmp_get_data=0
+aacx=5256,aacy=1930,aacz=17286
+gyrox=117,gyroy=-9,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000007.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 368
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.015894
+roll=-0.006943
+mpu_dmp_get_data=0
+aacx=5230,aacy=1962,aacz=17204
+gyrox=116,gyroy=-7,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000009.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 391
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.026001
+roll=-0.011201
+mpu_dmp_get_data=0
+aacx=5290,aacy=2000,aacz=17312
+gyrox=117,gyroy=-6,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000011.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 414
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.018606
+roll=-0.010524
+mpu_dmp_get_data=30
+aacx=5214,aacy=2046,aacz=17248
+gyrox=131,gyroy=23,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000013.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 437
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.018606
+roll=-0.010524
+mpu_dmp_get_data=0
+aacx=8298,aacy=2152,aacz=16202
+gyrox=117,gyroy=4,gyroz=-65
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000015.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 460
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-10.493926
+roll=1.261505
+mpu_dmp_get_data=0
+aacx=8450,aacy=2326,aacz=15684
+gyrox=120,gyroy=-9,gyroz=-64
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000017.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 483
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-11.879352
+roll=1.342518
+mpu_dmp_get_data=0
+aacx=8692,aacy=2314,aacz=15590
+gyrox=116,gyroy=-22,gyroz=-59
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000019.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 506
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-12.949003
+roll=1.254241
+mpu_dmp_get_data=0
+aacx=8860,aacy=2380,aacz=15334
+gyrox=110,gyroy=-57,gyroz=-72
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000021.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 529
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-13.720668
+roll=1.191172
+mpu_dmp_get_data=0
+aacx=9278,aacy=2398,aacz=15418
+gyrox=108,gyroy=-29,gyroz=-50
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000023.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 552
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-15.362798
+roll=1.679953
+mpu_dmp_get_data=0
+aacx=11248,aacy=1470,aacz=14112
+gyrox=151,gyroy=-39,gyroz=-47
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000025.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 575
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-23.128426
+roll=-1.743300
+mpu_dmp_get_data=0
+aacx=11336,aacy=1588,aacz=13896
+gyrox=131,gyroy=-7,gyroz=-60
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000027.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 598
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-24.774981
+roll=-1.759491
+mpu_dmp_get_data=0
+aacx=10112,aacy=2024,aacz=14678
+gyrox=92,gyroy=137,gyroz=-88
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000029.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 621
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=-20.536821
+roll=-0.901339
+mpu_dmp_get_data=0
+aacx=1952,aacy=1236,aacz=18194
+gyrox=98,gyroy=196,gyroz=-18
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000031.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 644
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=5.605694
+roll=-1.943049
+mpu_dmp_get_data=0
+aacx=-1016,aacy=1134,aacz=18046
+gyrox=115,gyroy=4,gyroz=-60
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000033.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 667
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=20.662466
+roll=-2.965936
+mpu_dmp_get_data=0
+aacx=-1096,aacy=1218,aacz=18070
+gyrox=122,gyroy=-5,gyroz=-65
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000035.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 690
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=20.455606
+roll=-2.605532
+mpu_dmp_get_data=0
+aacx=-1082,aacy=1282,aacz=17974
+gyrox=121,gyroy=-10,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000036.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 713
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=20.463768
+roll=-2.396896
+mpu_dmp_get_data=0
+aacx=4924,aacy=1236,aacz=17504
+gyrox=156,gyroy=-9,gyroz=-73
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000039.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 736
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=4.037189
+roll=-3.219015
+mpu_dmp_get_data=0
+aacx=5110,aacy=1778,aacz=17404
+gyrox=118,gyroy=-7,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000040.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 759
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.279826
+roll=-0.519553
+mpu_dmp_get_data=0
+aacx=5012,aacy=1840,aacz=17412
+gyrox=118,gyroy=-7,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000042.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 782
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.603996
+roll=-0.555744
+mpu_dmp_get_data=0
+aacx=5114,aacy=1842,aacz=17326
+gyrox=117,gyroy=-5,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000044.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 805
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=2.360481
+roll=41.683807
+mpu_dmp_get_data=0
+aacx=5072,aacy=1754,aacz=17312
+gyrox=118,gyroy=-6,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000046.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 828
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=2.360481
+roll=41.683807
+mpu_dmp_get_data=30
+aacx=5046,aacy=1856,aacz=17250
+gyrox=117,gyroy=-8,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000048.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 851
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=2.360481
+roll=41.683807
+mpu_dmp_get_data=0
+aacx=5044,aacy=1804,aacz=17296
+gyrox=118,gyroy=-7,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000050.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 874
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=2.360481
+roll=41.683807
+mpu_dmp_get_data=30
+aacx=5126,aacy=1814,aacz=17352
+gyrox=118,gyroy=-3,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000052.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 897
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=2.360481
+roll=41.683807
+mpu_dmp_get_data=0
+aacx=5064,aacy=1876,aacz=17342
+gyrox=119,gyroy=-8,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000054.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 920
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.629277
+roll=-0.454324
+mpu_dmp_get_data=0
+aacx=5048,aacy=1874,aacz=17360
+gyrox=117,gyroy=-7,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000056.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 943
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.626051
+roll=-0.447472
+mpu_dmp_get_data=0
+aacx=5076,aacy=1820,aacz=17412
+gyrox=119,gyroy=-9,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000058.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 966
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.582422
+roll=-0.435655
+mpu_dmp_get_data=0
+aacx=5106,aacy=1820,aacz=17374
+gyrox=116,gyroy=-8,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000100.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 989
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.572322
+roll=-0.438242
+mpu_dmp_get_data=0
+aacx=5088,aacy=1830,aacz=17352
+gyrox=117,gyroy=-5,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000102.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1012
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.573460
+roll=-0.422305
+mpu_dmp_get_data=0
+aacx=5044,aacy=1804,aacz=17470
+gyrox=118,gyroy=-7,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000104.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1035
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.583491
+roll=-0.427537
+mpu_dmp_get_data=0
+aacx=5150,aacy=1760,aacz=17260
+gyrox=115,gyroy=-12,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000106.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1058
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.560519
+roll=-0.413609
+mpu_dmp_get_data=0
+aacx=5130,aacy=1860,aacz=17306
+gyrox=116,gyroy=-4,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000108.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1081
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.525857
+roll=-0.403224
+mpu_dmp_get_data=0
+aacx=5192,aacy=1872,aacz=17282
+gyrox=120,gyroy=-3,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000110.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1104
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.522140
+roll=-0.400569
+mpu_dmp_get_data=0
+aacx=5090,aacy=1826,aacz=17444
+gyrox=117,gyroy=-8,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000112.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1127
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.521667
+roll=-0.394594
+mpu_dmp_get_data=0
+aacx=5018,aacy=1772,aacz=17472
+gyrox=118,gyroy=-5,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000114.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1150
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.521667
+roll=-0.394594
+mpu_dmp_get_data=30
+aacx=5028,aacy=1968,aacz=17604
+gyrox=110,gyroy=-1,gyroz=-61
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000116.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1173
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.521667
+roll=-0.394594
+mpu_dmp_get_data=0
+aacx=5098,aacy=1856,aacz=17340
+gyrox=117,gyroy=-6,gyroz=-62
+收到GPS
+USART2_RX_BUF:AT+CGNSINF
++CGNSINF: 1,0,19800106000118.000,,,,0.00,0.0,0,,,,,,0,0,,,,,
+
+OK
+
+file_name:19800106.txt
+char_filename:19800106.txt
+打开文件返回代码：0
+file_size: 1196
+buffer_length:21
+写入文件返回代码：0
+关闭文件返回代码：0
+cipsend:0
+send_ok:0
+pitch=0.521667
+roll=-0.394594
+mpu_dmp_get_data=30
+aacx=5082,aacy=1850,aacz=17268
+gyrox=117,g
