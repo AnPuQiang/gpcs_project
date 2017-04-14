@@ -302,6 +302,20 @@ void task1_task(void *p_arg)
 				SD_flag = 1;
 				write_SD_FLAG(SD_flag);
 			}
+			if(1 == res_gprs){							//发送失败
+				SD_flag = 0;
+				write_SD_FLAG(SD_flag);
+				printf(".............发送消息队列............%d\r\n",fail_filesize);
+					OSQPost((OS_Q*		)&LINE_MSG,		
+					(void*		)&fail_filesize,
+					(OS_MSG_SIZE)4,			//发送字节数
+					(OS_OPT		)OS_OPT_POST_FIFO+OS_OPT_POST_ALL, 	
+					(OS_ERR*	)&err);
+					printf(".........err=%d............\r\n",err);
+					Send_OK();
+					Send_OK();
+			OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //延时1s
+			}
 			USART2_Init(115200);
 			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
 			printf("cipsend:%d\r\n",res_gprs);	//0成功；1失败
@@ -336,18 +350,7 @@ void task1_task(void *p_arg)
 		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);	//得到陀螺仪数据
 		USART2_Init(115200);
 		
-		if(1 == res_gprs){							//发送失败
-				SD_flag = 0;
-				write_SD_FLAG(SD_flag);
-				printf(".............发送消息队列............%d\r\n",fail_filesize);
-					OSQPost((OS_Q*		)&LINE_MSG,		
-					(void*		)&fail_filesize,
-					(OS_MSG_SIZE)4,			//发送字节数
-					(OS_OPT		)OS_OPT_POST_FIFO+OS_OPT_POST_ALL, 	
-					(OS_ERR*	)&err);
-					printf(".........err=%d............\r\n",err);
-			OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //延时1s
-			}
+		
 		printf("......................................................................................\r\n\r\n");
 	
 		
@@ -511,7 +514,7 @@ void data_storage(void)
 	}
 	file_name[8]='.';file_name[9]='t';file_name[10]='x';file_name[11]='t';
 	
-	printf("file_name:%s\r\n",(char*)file_name);
+	printf("%s\r\n",(char*)file_name);
 	//将获取到的年月日信息作为文件名，创建txt文件
 	char_filename=(char*)file_name;
 	//printf("char_filename:%s\r\n",char_filename);
