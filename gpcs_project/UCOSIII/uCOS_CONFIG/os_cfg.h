@@ -38,7 +38,7 @@
 #define OS_CFG_ARG_CHK_EN               1u   /* Enable (1) or Disable (0) argument checking                           */
 #define OS_CFG_CALLED_FROM_ISR_CHK_EN   1u   /* Enable (1) or Disable (0) check for called from ISR                   */
 #define OS_CFG_DBG_EN                   1u   /* Enable (1) debug code/variables                                       */
-#define OS_CFG_ISR_POST_DEFERRED_EN     1u   /* Enable (1) or Disable (0) Deferred ISR posts 通过调度器上锁来访问临界段*/
+#define OS_CFG_ISR_POST_DEFERRED_EN     0u   /* Enable (1) or Disable (0) Deferred ISR posts 通过调度器上锁来访问临界段*/
 #define OS_CFG_OBJ_TYPE_CHK_EN          1u   /* Enable (1) or Disable (0) object type checking                        */
 #define OS_CFG_TS_EN                    1u   /* Enable (1) or Disable (0) time stamping                               */
 

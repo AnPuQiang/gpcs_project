@@ -49,7 +49,7 @@ void task1_task(void *p_arg);
 
 //ÈÎÎñ¶þÎª¼àÊÓÈÎÎñ
 //ÈÎÎñÓÅÏÈ¼¶
-#define TASK2_TASK_PRIO		7
+#define TASK2_TASK_PRIO		8
 //ÈÎÎñ¶ÑÕ»´óÐ¡	
 #define TASK2_STK_SIZE 		128
 //ÈÎÎñ¿ØÖÆ¿é
@@ -59,7 +59,7 @@ __align(8) static CPU_STK TASK2_TASK_STK[TASK2_STK_SIZE];
 void task2_task(void *p_arg);
 
 //////ÏûÏ¢¶ÓÁÐ////////////////////
-#define LINE_MSG_NUM 1
+#define LINE_MSG_NUM 2
 OS_Q LINE_MSG;	//¶¨ÒåÏûÏ¢¶ÓÁÐ
 
 //MPU6050Ð£×¼Êý¾Ý
@@ -265,7 +265,7 @@ void task1_task(void *p_arg)
 	u8 SD_flag;
 	
 	u8 gps_able;
-	u8 res_gprs;
+	u8 res_gprs = 1;
 //	OSSemPend(&MY_SEM,0,OS_OPT_PEND_BLOCKING,0,&err); 	//ÇëÇóÐÅºÅÁ¿
 //	memcpy(share_resource,task1_str,sizeof(task1_str)); //Ïò¹²Ïí×ÊÔ´Çø¿½±´Êý¾Ý
 	connecting_server();
@@ -273,8 +273,7 @@ void task1_task(void *p_arg)
 	printf("gps power:%d",res_gprs);
 	while(1)
 	{
-		fail_filesize = 0;	//Ã¿´ÎÑ­»·¶¼¶Ô·¢ËÍÊ§°Ü´¦µÄ±ê¼Ç½øÐÐ³õÊ¼»¯
-		USART2_Init(115200);
+		
 		if(sim808_send_cmd("AT+CGNSINF\r\n","OK",1000)==0)
 		{
 			printf("ÊÕµ½GPS\r\n");
@@ -293,10 +292,9 @@ void task1_task(void *p_arg)
 			mpuaInit = (char*)mpuInit;
 			mpua = strcat((char*)mpua,"\r\n\32\0");
 			buffa = strcat((char*)buffa,"\r\n\32\0");
-//			mpuaInit = strcat((char*)mpuaInit,"\r\n\32\0");
 			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
 		  printf("cipsend:%d\r\n",res_gprs);	//0³É¹¦£»1Ê§°Ü
-			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",1000);
+			res_gprs=sim808_send_cmd((u8*)buffa,"SEND OK",500);
 			printf("send_ok:%d\r\n",res_gprs);
 			//ÏòSD¿¨ÖÐ·¢ËÍ±êÖ¾Î»£¬Í¬ÊÂ·¢ËÍÏûÏ¢¶ÓÁÐ£
 			if(0 == res_gprs)	//·¢ËÍ³É¹¦
@@ -304,25 +302,11 @@ void task1_task(void *p_arg)
 				SD_flag = 1;
 				write_SD_FLAG(SD_flag);
 			}
-			if(1 == res_gprs){							//·¢ËÍÊ§°Ü
-				SD_flag = 0;
-				write_SD_FLAG(SD_flag);
-					printf(".............·¢ËÍÏûÏ¢¶ÓÁÐ............%d\r\n",fail_filesize);
-					OSQPost((OS_Q*		)&LINE_MSG,		
-					(void*		)&fail_filesize,
-					(OS_MSG_SIZE)4,			//·¢ËÍ×Ö½ÚÊý
-					(OS_OPT		)OS_OPT_POST_FIFO, 	
-					(OS_ERR*	)&err);
-			}
 			USART2_Init(115200);
 			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
 			printf("cipsend:%d\r\n",res_gprs);	//0³É¹¦£»1Ê§°Ü
-			res_gprs=sim808_send_cmd((u8*)mpua,"SEND OK",1000);
+			res_gprs=sim808_send_cmd((u8*)mpua,"SEND OK",500);
 			printf("send_ok:%d\r\n",res_gprs);
-//			res_gprs=sim808_send_cmd("AT+CIPSEND",">",200);
-//			printf("cipsend:%d\r\n",res_gprs);	//0³É¹¦£»1Ê§°Ü
-//			res_gprs=sim808_send_cmd((u8*)mpuaInit,"SEND OK",1000);
-//			printf("send_ok:%d\r\n",res_gprs);
 			Send_OK();
 			delay_ms(500);
 			memset(buffer,0,sizeof(buffer));	//Çå¿Õbuffer
@@ -343,21 +327,31 @@ void task1_task(void *p_arg)
 		/*¼ÓËÙ¶È´«¸ÐÆ÷ÁéÃô¶È16384LSB/g
 		ÍÓÂÝÒÇÁéÃô¶È16.4LSB/(¶ÈÃ¿Ãë)*/
 		MPU_Get_Accelerometer(&aacx,&aacy,&aacz);	//µÃµ½¼ÓËÙ¶È´«¸ÐÆ÷Êý¾Ý
-		printf("aacx=%f,aacy=%f,aacz=%f\r\n",(float)(aacx*9.8/16384)-ACCX0,(float)(aacy*9.8/16384)-ACCY0,(float)(aacz*9.8/16384));
+//		printf("aacx=%f,aacy=%f,aacz=%f ",(float)(aacx*9.8/16384)-ACCX0,(float)(aacy*9.8/16384)-ACCY0,(float)(aacz*9.8/16384));
 		g = (float)(aacz*9.8/16384);
 //		g = 9.8;
 		aacxx = (float)(aacx*g/16384)-ACCX0-g*sin(pitch*3.1415/180)*cos(roll*3.1415/180);
 		aacyy = (float)(aacy*g/16384)-ACCY0+g*sin(roll*3.1415/180)*cos(pitch*3.1415/180);
 		printf("aacxx = %f, aacyy = %f\r\n", aacxx, aacyy);
 		MPU_Get_Gyroscope(&gyrox,&gyroy,&gyroz);	//µÃµ½ÍÓÂÝÒÇÊý¾Ý
-//		printf("gyrox=%f,gyroy=%f,gyroz=%f\r\n",(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
-//		printf("%s\r\n",share_resource);	//´®¿ÚÊä³ö¹²Ïí×ÊÔ´ÇøÊý¾Ý	
-//		OSSemPost (&MY_SEM,OS_OPT_POST_1,&err);				//·¢ËÍÐÅºÅÁ¿
-		OSTimeDlyHMSM(0,0,0,500,OS_OPT_TIME_HMSM_STRICT,&err);   //ÑÓÊ±1s
-
+		USART2_Init(115200);
 		
+		if(1 == res_gprs){							//·¢ËÍÊ§°Ü
+				SD_flag = 0;
+				write_SD_FLAG(SD_flag);
+				printf(".............·¢ËÍÏûÏ¢¶ÓÁÐ............%d\r\n",fail_filesize);
+					OSQPost((OS_Q*		)&LINE_MSG,		
+					(void*		)&fail_filesize,
+					(OS_MSG_SIZE)4,			//·¢ËÍ×Ö½ÚÊý
+					(OS_OPT		)OS_OPT_POST_FIFO+OS_OPT_POST_ALL, 	
+					(OS_ERR*	)&err);
+					printf(".........err=%d............\r\n",err);
+			OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //ÑÓÊ±1s
+			}
+		printf("......................................................................................\r\n\r\n");
 	
-	}
+		
+	}	
 }
 
 //ÈÎÎñ2µÄÈÎÎñº¯Êý
@@ -366,7 +360,6 @@ void task2_task(void *p_arg)
 	OS_ERR err;
 	OS_MSG_SIZE size;
 	u32 *key;
-//	u8 task2_str[]="!";
 	while(1)
 	{
 			key=OSQPend((OS_Q*			)&LINE_MSG,   
@@ -375,9 +368,10 @@ void task2_task(void *p_arg)
                   (OS_MSG_SIZE*	)&size,		
                   (CPU_TS*		)0,
                   (OS_ERR*		)&err);
-//		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //ÑÓÊ±1s
-		
-		printf("¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£ÊÕµ½%d¡£\r\n",(*key));
+		printf("......err=%d...",err);
+		printf(".........ÊÕµ½£º%d....\r\n",(*key));
+		delay_ms(5000);
+		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_PERIODIC,&err);   //ÑÓÊ±1s
 	}
 }
 
@@ -474,7 +468,7 @@ u8 gps_analysis(void)	//·µ»Ø1Ö¤Ã÷³É¹¦
 	 
 	 buffer[7] = date%10 + '0'; buffer[6]=date/10 + '0';
 	 buffer[9] = time%10 + '0'; buffer[8]=time/10 + '0';
-	 printf("USART2_RX_BUF:%s\r\n",USART2_RX_BUF);
+//	 printf("USART2_RX_BUF:%s\r\n",USART2_RX_BUF);
    CLR_Buf2();
 	 return 1;
 	}
@@ -523,20 +517,17 @@ void data_storage(void)
 	//printf("char_filename:%s\r\n",char_filename);
 	//´ò¿ª¸ÃÎÄ¼þ£¬½«bufferÐ´ÈëÎÄ¼þÖÐ
 	res_sd=f_open(file, char_filename, FA_OPEN_ALWAYS|FA_WRITE);
-	printf("´ò¿ªÎÄ¼þ·µ»Ø´úÂë£º%d\r\n",res_sd);
+	printf("open:%d\r\n",res_sd);
 	printf("file_size: %d\r\n",(int)(*file).fsize);
 	f_lseek(file,(*file).fsize);
 	buffer_length = strlen((char*)buffer);
 	printf("buffer_length:%d\r\n",buffer_length);
 	res_sd=f_write(file,(char*)buffer,buffer_length,&br);
-//	sprintf(mpuInit,"%f,%f,%f,%f,%f,%f,",(float)(aacx*9.8/16384)-ACCX0,(float)(aacy*9.8/16384)-ACCY0,(float)(aacz*9.8/16384)-ACCZ0,(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
-//	res_sd=f_write(file,(char*)mpuInit,strlen(mpuInit),&br);
 	sprintf(mpu,"%f,%f,%f,%f,%f,%f",aacxx,aacyy,(float)(aacz*9.8/16384)-ACCZ0,(float)(gyrox/16.4)-GYROX0,(float)(gyroy/16.4)-GYROY0,(float)(gyroz/16.4)-GYROZ0);
 	res_sd=f_write(file,(char*)mpu,strlen(mpu),&br);
-//	f_printf(file,"\r\n");
-	printf("Ð´ÈëÎÄ¼þ·µ»Ø´úÂë£º%d\r\n",res_sd);	
+	printf("write:%d\r\n",res_sd);	
 	res_sd=f_close(file);
-	printf("¹Ø±ÕÎÄ¼þ·µ»Ø´úÂë£º%d\r\n",res_sd);
+	printf("close:%d\r\n",res_sd);
 }
 
 void write_SD_FLAG(u8 SD_FLAG)
